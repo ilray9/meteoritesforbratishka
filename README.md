@@ -1,3 +1,3 @@
 # meteoritesforbratishka
-installing the necessary libraries:
+to install the necessary libraries:
 pip install pandas
