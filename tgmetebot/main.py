@@ -13,7 +13,7 @@ df_clean = df.dropna(subset=['mass', 'reclat', 'reclong'])
 class_column = 'recclass' if 'recclass' in df.columns else 'class'
 
 # Настройка бота
-API_TOKEN = 'Paste_ur_bot_id'
+API_TOKEN = 'Paste_ur_bot_token'
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 logging.basicConfig(level=logging.INFO)
@@ -299,4 +299,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
